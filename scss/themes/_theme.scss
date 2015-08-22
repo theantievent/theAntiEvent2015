@@ -56,12 +56,13 @@ body {
   margin: 0 !important;
   text-align: center;
   overflow: hidden;
+  background-color: #222;
   @media all and (max-width: 420px) {
     width: 100%;
     position: relative !important;
     top: inherit !important;
     left: inherit !important;
-    height: auto !important;
+    height: 300px !important;
     transform: none !important;
     float: none !important;
     overflow: visible !important;
@@ -76,14 +77,15 @@ body {
   img {
     height: 200px;
     @media all and (max-width: 420px) {
-      // width: 100%;
-      // height: auto;
+      width: 100%;
+      height: auto;
       max-width: 100%;
     }
   }
   &.text {
     padding: 20px;
     @media all and (max-width: 420px) {
+      height: 400px !important;
       // display: block;
       // transform: translate3d(0px, 0px, 0px) !important;
     }
@@ -94,6 +96,9 @@ body {
   &.big {
     width: 400px;
     height: 400px;
+    @media all and (max-width: 420px) {
+      width: 100%;
+    }
     img {
       height: 400px;
     }
@@ -429,19 +434,19 @@ ul.boxshadow2 li {
     }
   }
   &.color {
-    background: darken($color, 0%);
+    background: darken($color, 0%) !important;
     color: $opaque;
   }
   &.dark {
-    background: darken($darker, 0%);
+    background: darken($darker, 0%) !important;
     color: $bare;
   }
   &.neutral {
-    background: darken($dark, 0%);
+    background: darken($dark, 0%) !important;
     color: $bare;
   }
   &.light {
-    background: darken($bare, 0%);
+    background: darken($bare, 0%) !important;
     color: $opaque !important;
   }
 }
