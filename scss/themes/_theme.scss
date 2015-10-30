@@ -352,6 +352,9 @@ ul.boxshadow2 li {
   align-items: center;
   justify-content: center;
   height: 600px !important;
+  &.only-title {
+    height: 150px !important;
+  }
   @media all and (max-width: 810px) {
     justify-content: flex-start;
     height: 700px !important;
@@ -452,6 +455,10 @@ ul.boxshadow2 li {
   }
   &.light {
     background: darken($bare, 0%) !important;
+    color: $opaque !important;
+  }
+  &.white {
+    background: darken($white, 0%) !important;
     color: $opaque !important;
   }
 }
