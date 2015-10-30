@@ -445,6 +445,10 @@ ul.boxshadow2 li {
     background: darken($dark, 0%) !important;
     color: $bare;
   }
+  &.neutraler {
+    background: darken($dark, 15%) !important;
+    color: $bare;
+  }
   &.light {
     background: darken($bare, 0%) !important;
     color: $opaque !important;
